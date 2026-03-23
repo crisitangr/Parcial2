@@ -25,4 +25,11 @@ public void agregarUsuario(String n,String c, String t) {
     cola.insertar(u);
 
 }
+public void prestarLibro(String t, String u) {
+
+    String dato = t + " prestado a " + u;
+
+    pila.push(dato);
+
+}
 } 
