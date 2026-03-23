@@ -12,5 +12,9 @@ public class Persona { // clase padre
         cedula = c; // guarda cedula
 
     }
+public String getNombre() {
 
+    return nombre;
+
+}
 }
