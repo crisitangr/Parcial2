@@ -1,16 +1,15 @@
 //Esta clase representa un nodo para la estructura pila, contiene un dato y una referencia al siguiente nodo.
- // paquete
-import com.murcia.utils.*;
-public class NodoPrestamo { // nodo pila
+// Hereda de Nodo<String> porque guarda datos tipo String
+import com.murcia.utils.Nodo; 
 
-    public String dato; // dato guardado
-    public NodoPrestamo siguiente; // siguiente nodo
+// Esta clase representa un nodo para una pila de préstamos
+public class NodoPrestamo extends Nodo<String> {
 
-    public NodoPrestamo(String d) { // constructor
+    // Constructor que recibe un dato tipo String
+    public NodoPrestamo(String d) {
 
-        dato = d; // guardar dato
-        siguiente = null; // sin enlace
-
+        // Llama al constructor de la clase padre
+        super(d);
     }
 
 }
