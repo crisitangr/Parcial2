@@ -1,38 +1,29 @@
-//Se usa la estructura cola para manejar los usuarios en orden de llegada.
- // paquete
-import com.murcia.utils.*;
-public class ColaUsuarios { // clase cola
+import com.murcia.utils.ColaEnlazada; // Importamos la cola del profe
+import com.murcia.utils.Nodo; // Para poder trabajar con nodos si es necesario
 
-    private NodoUsuario frente; // primer nodo
-    private NodoUsuario fin; // ultimo nodo
+// Se usa la estructura cola para manejar los usuarios en orden de llegada
+public class ColaUsuarios extends ColaEnlazada<Usuario> {
 
-    public ColaUsuarios() { // constructor
-
-        frente = null; // cola vacia
-        fin = null; // cola vacia
-
+    // Constructor: llama al constructor de la clase padre
+    public ColaUsuarios() {
+        super(); // inicializa la cola del profe
     }
 
-    public void insertar(Usuario u) { // insertar en cola
+    // Método equivalente a "insertar" )
+    public void insertar(Usuario u) {
 
-        NodoUsuario nuevo = new NodoUsuario(u); // crear nodo
-
-        if (frente == null) { // si vacia
-
-            frente = nuevo; // nuevo es primero
-            fin = nuevo; // nuevo es ultimo
-
-        } else {
-
-            fin.siguiente = nuevo; // enlazar al final
-            fin = nuevo; // nuevo es ultimo
-
-        }
-
+        // usamos el método del profe
+        this.encolar(u);
     }
-public NodoUsuario getFrente() {
 
-    return frente;
+    // Método para obtener el frente 
+    public Usuario getFrente() {
 
-}
+        
+        //usamos clone() para no alterar la cola original
+        ColaEnlazada<Usuario> copia = (ColaEnlazada<Usuario>) this.clone();
+
+        // Obtenemos el primer elemento sin eliminarlo de la cola original
+        return copia.desencolar();
+    }
 }
