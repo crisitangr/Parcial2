@@ -1,6 +1,6 @@
 //Esta clase implementa una lista enlazada manual usando nodos para almacenar los libros.
  // paquete
-
+import com.murcia.utils.*;
 public class ListaLibros { // lista enlazada
   
     private CeldaLibro primero; // primer nodo

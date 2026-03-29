@@ -1,6 +1,6 @@
 //Esta clase representa un nodo para la estructura pila, contiene un dato y una referencia al siguiente nodo.
  // paquete
-
+import com.murcia.utils.*;
 public class NodoPrestamo { // nodo pila
 
     public String dato; // dato guardado

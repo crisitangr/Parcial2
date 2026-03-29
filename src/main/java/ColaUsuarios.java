@@ -1,6 +1,6 @@
 //Se usa la estructura cola para manejar los usuarios en orden de llegada.
  // paquete
-
+import com.murcia.utils.*;
 public class ColaUsuarios { // clase cola
 
     private NodoUsuario frente; // primer nodo

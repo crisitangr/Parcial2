@@ -1,16 +1,9 @@
-//Esta clase representa un nodo de la lista enlazada, contiene un libro y un enlace al siguiente nodo.
- // paquete
+import com.murcia.utils.Nodo;
 
-public class CeldaLibro { // nodo de lista
+public class CeldaLibro extends Nodo<Libro> {
 
-    public Libro dato; // dato que guarda (libro)
-    public CeldaLibro siguiente; // enlace al siguiente nodo
-
-    public CeldaLibro(Libro d) { // constructor
-
-        dato = d; // guarda el libro
-        siguiente = null; // no apunta a nada
-
+    public CeldaLibro(Libro d) {
+        super(d); // llama al constructor del Nodo y guarda el libro
     }
 
 }
