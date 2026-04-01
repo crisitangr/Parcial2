@@ -24,24 +24,23 @@ public class MostrarLibros extends javax.swing.JFrame {
     mostrar();
 
 }
-   public void mostrar() {
-
-    CeldaLibro aux = Biblioteca.lista.getPrimero();
+  public void mostrar() {
 
     String texto = "";
 
-    while (aux != null) {
+    // Recorremos la lista usando el tamaño
+    for (int i = 0; i < Biblioteca.lista.size(); i++) {
 
-        texto = texto + aux.dato.getTitulo() + " - " + aux.dato.getAutor() + "\n";
+        // Obtenemos cada libro directamente
+        Libro l = Biblioteca.lista.get(i);
 
-        aux = aux.siguiente;
-
+        // Construimos el texto con título y autor
+        texto = texto + l.getTitulo() + " - " + l.getAutor() + "\n";
     }
 
+    // Mostramos el resultado en el JTextArea
     txtArea.setText(texto);
-
 }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
