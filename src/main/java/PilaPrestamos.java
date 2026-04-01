@@ -1,30 +1,16 @@
-//Se usa la pila para guardar el historial de préstamos.
- // paquete
+import com.murcia.utils.*;
 
-public class PilaPrestamos { // pila
-   
-    private NodoPrestamo cima; // parte superior
+public class PilaPrestamos extends ListaEnlazada<String> {
 
-    public PilaPrestamos() { // constructor
-
-        cima = null; // pila vacia
-
+    public PilaPrestamos() {
+        super(); // constructor del padre
     }
 
-    public void push(String d) { // agregar
-
-        NodoPrestamo nuevo = new NodoPrestamo(d); // crear nodo
-
-       nuevo.setNext(cima); // apunta a la cima
-
-        cima = nuevo; // nueva cima
-
+    public void push(String d) {
+        super.push(d); // usa el método del profe
     }
 
-    public NodoPrestamo getCima() { // obtener cima
-
-        return cima; // devuelve cima
-
+    public String getCima() {
+        return super.getFirst(); // cima = primer elemento
     }
-
 }

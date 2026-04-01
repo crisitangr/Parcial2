@@ -25,20 +25,20 @@ public MostrarPrestamos(Biblioteca b1) {
 }
 public void mostrar() {
 
-    NodoPrestamo aux = b.pila.getCima();
-
     String texto = "";
 
-    while (aux != null) {
+    // Recorremos la pila (que ahora es ListaEnlazada)
+    for (int i = 0; i < b.pila.size(); i++) {
 
-        texto = texto + aux.dato + "\n";
+        // Obtenemos cada dato (String)
+        String p = b.pila.get(i);
 
-        aux = aux.siguiente;
-
+        // Construimos el texto
+        texto = texto + p + "\n";
     }
 
+    // Mostramos en pantalla
     txtArea.setText(texto);
-
 }
 
     /**
