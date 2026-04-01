@@ -27,20 +27,20 @@ public MostrarUsuarios(Biblioteca b1) {
 }
 public void mostrar() {
 
-    NodoUsuario aux = Biblioteca.cola.getFrente();
-
     String texto = "";
 
-    while (aux != null) {
+    // Recorremos la cola como lista
+    for (int i = 0; i < Biblioteca.cola.size(); i++) {
 
-        texto = texto + aux.dato.getNombre() + "\n";
+        // Obtenemos cada usuario
+        Usuario u = Biblioteca.cola.get(i);
 
-        aux = aux.siguiente;
-
+        // Construimos el texto
+        texto = texto + u.getNombre() + "\n";
     }
 
+    // Mostramos en pantalla
     txtArea.setText(texto);
-
 }
     /**
      * This method is called from within the constructor to initialize the form.
