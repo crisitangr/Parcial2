@@ -1,4 +1,4 @@
-//Esta clase representa un nodo para la estructura pila, contiene un dato y una referencia al siguiente nodo.
+   //Esta clase representa un nodo para la estructura pila, contiene un dato y una referencia al siguiente nodo.
 // Hereda de Nodo<String> porque guarda datos tipo String
 import com.murcia.utils.Nodo; 
 

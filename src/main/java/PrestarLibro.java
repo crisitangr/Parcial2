@@ -34,8 +34,8 @@ public class PrestarLibro extends javax.swing.JFrame {
         txtTitulo = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnPrestar = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -44,17 +44,17 @@ public class PrestarLibro extends javax.swing.JFrame {
 
         jLabel2.setText("Usuario");
 
-        jButton1.setText("Prestar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnPrestar.setText("Prestar");
+        btnPrestar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnPrestarActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Volver");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnVolver.setText("Volver");
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnVolverActionPerformed(evt);
             }
         });
 
@@ -79,9 +79,9 @@ public class PrestarLibro extends javax.swing.JFrame {
                                 .addComponent(txtTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(77, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(btnPrestar)
                         .addGap(95, 95, 95)
-                        .addComponent(jButton2)
+                        .addComponent(btnVolver)
                         .addGap(123, 123, 123))))
             .addGroup(layout.createSequentialGroup()
                 .addGap(128, 128, 128)
@@ -103,15 +103,15 @@ public class PrestarLibro extends javax.swing.JFrame {
                     .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(47, 47, 47)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(btnPrestar)
+                    .addComponent(btnVolver))
                 .addContainerGap(88, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnPrestarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrestarActionPerformed
 String t = txtTitulo.getText();
 String u = txtUsuario.getText();
 
@@ -119,11 +119,11 @@ b.prestarLibro(t, u);
 
 txtTitulo.setText("");
 txtUsuario.setText("");        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnPrestarActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
 this.dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnVolverActionPerformed
 
     /**
      * @param args the command line arguments
@@ -131,8 +131,8 @@ this.dispose();        // TODO add your handling code here:
  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnPrestar;
+    private javax.swing.JButton btnVolver;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

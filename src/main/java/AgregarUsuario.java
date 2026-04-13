@@ -31,8 +31,8 @@ public class AgregarUsuario extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnGuardar = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -43,17 +43,17 @@ public class AgregarUsuario extends javax.swing.JFrame {
 
         jLabel1.setText("Nombre");
 
-        jButton1.setText("Guardar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardar.setText("Guardar");
+        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnGuardarActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Volver");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnVolver.setText("Volver");
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnVolverActionPerformed(evt);
             }
         });
 
@@ -82,9 +82,9 @@ public class AgregarUsuario extends javax.swing.JFrame {
                             .addComponent(txtCodigo)
                             .addComponent(txtTipo)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(btnGuardar)
                         .addGap(62, 62, 62)
-                        .addComponent(jButton2)))
+                        .addComponent(btnVolver)))
                 .addContainerGap(86, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -106,15 +106,15 @@ public class AgregarUsuario extends javax.swing.JFrame {
                     .addComponent(txtTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(46, 46, 46)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(btnGuardar)
+                    .addComponent(btnVolver))
                 .addContainerGap(50, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         // TODO add your handling code here:
         String n = txtNombre.getText();
 String c = txtCodigo.getText();
@@ -125,12 +125,12 @@ b.agregarUsuario(n, c, t);
 txtNombre.setText("");
 txtCodigo.setText("");
 txtTipo.setText("");
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnGuardarActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
         // TODO add your handling code here:
         this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnVolverActionPerformed
 
     /**
      * @param args the command line arguments
@@ -138,8 +138,8 @@ txtTipo.setText("");
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnGuardar;
+    private javax.swing.JButton btnVolver;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
