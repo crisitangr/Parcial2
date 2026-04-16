@@ -1,6 +1,6 @@
 import com.murcia.utils.ColaEnlazada; // Importamos la cola del profe
 import com.murcia.utils.Nodo; // Para poder trabajar con nodos si es necesario
-
+//.
 // Se usa la estructura cola para manejar los usuarios en orden de llegada
 public class ColaUsuarios extends ColaEnlazada<Usuario> {
 
