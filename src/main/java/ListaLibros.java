@@ -20,6 +20,7 @@ public class ListaLibros extends ListaEnlazada<Libro> {
         // Retorna el primer elemento de la lista
         return this.getFirst();
     }
+    //nuevo metodo de busqueda
         public Libro buscarPorTitulo(String titulo) {
 
         for (int i = 0; i < this.size(); i++) {
