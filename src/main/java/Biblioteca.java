@@ -1,5 +1,6 @@
 //Esta clase contiene las estructuras principales del programa como variables estáticas para poder acceder a ellas desde la interfaz gráfica
  // paquete
+//Cristian Gracia
 import com.murcia.utils.*;
 public class Biblioteca { // clase principal de datos
 
