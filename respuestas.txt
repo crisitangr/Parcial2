@@ -19,7 +19,14 @@ Si incluyó algún método de búsqueda explique su objetivo, valor de retorno y
 fuentes (donde se define y donde se llama).
 
 Respuesta:
-El método de búsqueda esta incluido en ListaLibros.java donde su valor de retorno
+No tenia ningún método de búsqueda, sin embargo implemente un método de este tipo que esta incluido en ListaLibros.java llamado
+buscarPorTitulo y lo que hace es recorrer utilizando como criterio de búsqueda el titulo del libro. Se recorre los elementos 
+mediante un ciclo for, en cada valor recibido se compara y utiliza el método equalsIgnoreCase (la comparación no distingue 
+mayúsculas y minúsculas), si se encuentra la coincidencia, el método devuelve inmediatamente el objeto Libro, si no se encuentra
+coincidencia el método devuelve null. En conclusión, este método permite buscar y recuperar el primer libro que coincida con un
+título específico, o indicar que no existe devolviendo un valor nulo.
 
+Fuente de Información: ListaLibros.java (linea 23 - linea 34)
 
+===========================================================================================================================
 
