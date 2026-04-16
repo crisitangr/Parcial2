@@ -11,7 +11,6 @@ public class ColaUsuarios extends ColaEnlazada<Usuario> {
 
     // Método equivalente a "insertar" )
     public void insertar(Usuario u) {
-
         // usamos el método del profe
         this.encolar(u);
     }

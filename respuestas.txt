@@ -1,0 +1,25 @@
+Actividades
+
+Pregunta #1:
+Referir al memos un a clase nueva, diferente a las referidas en la librería "mi-librería.jar", o en las 
+librerías por defecto de java incluida en su proyecto y explique de manera generan sus nuevos atributos y/o
+métodos (referir fuente de información).
+
+Respuesta:
+Se crea clase Usuario.java que hereda de Persona.java los atributos nombre y cedula. Además en Usuario.java se agrega
+ tipo de usuario (ej:Estudiante,Profesor, etc), también esta el constructor de Usuario donde se usa super para inicializar
+ lo datos heredados y se guarda el tipo de usuario. En conclusión esta clase junta los datos del usuario.
+
+Fuente de Información: Usuario.java (linea 4 - linea 16)
+
+===========================================================================================================================
+
+Pregunta #2
+Si incluyó algún método de búsqueda explique su objetivo, valor de retorno y parámetros (cada uno de ellos), Refiera las 
+fuentes (donde se define y donde se llama).
+
+Respuesta:
+El método de búsqueda esta incluido en ListaLibros.java donde su valor de retorno
+
+
+
